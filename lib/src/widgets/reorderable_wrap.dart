@@ -1035,8 +1035,8 @@ class _ReorderableWrapContentState extends State<_ReorderableWrapContent>
           containedDraggable.builder,
           if (containedDraggable.isReorderable)
             Positioned(
-                left: 0,
-                top: 0,
+                right: 0,
+                bottom: 0,
                 width: widget.direction == Axis.horizontal
                     ? _childSizes[index].width / 2
                     : _childSizes[index].width,
@@ -1046,8 +1046,8 @@ class _ReorderableWrapContentState extends State<_ReorderableWrapContent>
                 child: preDragTarget),
           if (containedDraggable.isReorderable)
             Positioned(
-                right: 0,
-                bottom: 0,
+                left: 0,
+                top: 0,
                 width: widget.direction == Axis.horizontal
                     ? _childSizes[index].width / 2
                     : _childSizes[index].width,
